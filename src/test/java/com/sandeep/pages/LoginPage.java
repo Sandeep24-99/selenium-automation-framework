@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 public class LoginPage {
     private WebDriver driver;
 
-    public LoginPage(WebDriver dWebDriver){
+    public LoginPage(WebDriver driver){
         this.driver = driver;
     }
 
@@ -22,9 +22,4 @@ public class LoginPage {
         driver.findElement(loginButton).click();
     }
 
-    public void login(String username, String password){
-        enterUsername(username);
-        enterPassword(password);
-        clickLogin();
-    }
 }
